@@ -61,3 +61,43 @@ const myn2 = myArray0.splice(1, 3);
 // console.log(myn2);
 
 // console.log("C", myArray0);
+
+
+// #** Array in JavaScript in depth
+
+const marvelHeroes = ["thor", "ironman", "hulk", "hockeye", "spiderman"];
+const dcHeroes = ["superman", "batman", "flash", "aquaman", "wonderwomen"];
+// console.log(marvelHeroes);
+// console.log(dcHeroes);
+
+// ** push  // * not better way
+// marvelHeroes.push(dcHeroes); //* it will create a array in array
+// console.log(marvelHeroes);
+// console.log(marvelHeroes[5][2]);
+
+// ** concat // * now it will create a new array that has element from both array
+const newHeroes = marvelHeroes.concat(dcHeroes);
+// console.log(newHeroes);
+
+// ** spread operator (...)// ** better way
+allHeroes = [...marvelHeroes, ...dcHeroes];
+// console.log(allHeroes);
+
+// ** flat // ** it will create one array of all inside arrays
+const anotherArray = [0, 1, 2, 3, [4, 5, 6, 7], 8, [(9, 10, [11, 12])]];
+// console.log(anotherArray);
+const realAnotherArray = anotherArray.flat(Infinity);
+// console.log(realAnotherArray);
+
+// ** isArray //* checks if element is array or not
+// console.log(Array.isArray("Rajratna")); // => false
+
+// ** .from //* converts in array
+// console.log(Array.from("Rajratna"));
+// console.log(Array.from({ name: "Rajratna" }));  // * intreating
+
+// ** .of  // ** convert multiple element in one array
+let score5 = 100;
+let score6 = 200;
+let score7 = 300;
+// console.log(Array.of(score5, score6, score7));
