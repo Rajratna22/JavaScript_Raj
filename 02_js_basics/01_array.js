@@ -1,4 +1,4 @@
-// #** 02_js_basics/01_array Array in JavaScript
+// #||** Array in JavaSCript ||
 
 // ** array declaration
 const myArray = [0, 1, 2, 3, 4, 5];
